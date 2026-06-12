@@ -1,0 +1,144 @@
+.student-ann-page {
+  min-height: 100vh;
+  padding: 28px 16px;
+  background: linear-gradient(
+    135deg,
+    #e0f2fe 0%,
+    #fce7f3 25%,
+    #fef3c7 50%,
+    #d1fae5 75%,
+    #e0e7ff 100%
+  );
+}
+
+/* title */
+.ann-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* controls */
+.ann-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.ann-controls input,
+.ann-controls select {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  min-width: 220px;
+}
+
+/* section heading */
+.section-heading {
+  margin: 18px 0 12px;
+  color: #0f172a;
+}
+
+/* grid */
+.ann-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* card */
+.ann-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+/* card top */
+.ann-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* pin */
+.pin-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.pin-btn.active {
+  opacity: 1;
+}
+
+/* meta */
+.ann-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.badge {
+  background: #1e90ff;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}
+
+.date {
+  color: #475569;
+}
+
+/* buttons */
+.view-btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ann-desc {
+  margin-top: 10px;
+  color: #334155;
+}
+
+/* back */
+.ann-back-wrap {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.ann-back-btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: 1px solid #1e90ff;
+  background: transparent;
+  color: #1e90ff;
+  cursor: pointer;
+}
+
+/* 📱 mobile */
+@media (max-width: 600px) {
+  .ann-controls input,
+  .ann-controls select {
+    width: 100%;
+  }
+
+  .ann-back-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,105 @@
+/* Full-page background + centered layout */
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 25%, #fef3c7 50%, #d1fae5 75%, #e0e7ff 100%);
+}
+
+.register-card {
+  width: min(520px, 100%);
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.register-title {
+  margin: 0 0 6px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.register-subtitle {
+  margin: 0 0 18px;
+  color: #475569;
+  font-size: 0.98rem;
+}
+
+.register-form {
+  display: grid;
+  gap: 14px;
+}
+
+.register-field {
+  display: grid;
+  gap: 6px;
+}
+
+.register-field label {
+  font-size: 0.92rem;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.register-field input,
+.register-field select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  background: #ffffff;
+  color: #0f172a;
+  outline: none;
+  font-size: 1rem;
+}
+
+.register-field input::placeholder {
+  color: #94a3b8;
+}
+
+.register-field input:focus,
+.register-field select:focus {
+  border-color: rgba(30, 144, 255, 0.65);
+  box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.18);
+}
+
+.register-button {
+  margin-top: 4px;
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #1e90ff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.06s ease, filter 0.2s ease;
+}
+
+.register-button:hover {
+  filter: brightness(0.96);
+}
+
+.register-button:active {
+  transform: scale(0.99);
+}
+
+/* Small screens: reduce padding a bit */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+}
+

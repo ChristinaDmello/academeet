@@ -1,0 +1,204 @@
+/* Full-screen landing page */
+.landing-page {
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #e0f2fe 0%, #fce7f3 25%, #fef3c7 50%, #d1fae5 75%, #e0e7ff 100%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  z-index: 100;
+}
+
+/* /* .logo-placeholder {
+  width: 40px;
+  height: 40px;
+  background-color: #1E90FF;
+  border-radius: 6px;
+  flex-shrink: 0;
+} */
+
+.logo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  /* background:white; */
+}
+
+.logo-placeholder img {
+  width: 100%;
+  height: 100%;
+  max-width: 48px;
+  max-height: 48px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .logo-placeholder {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-placeholder {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.app-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  /* color: #1effa5; */
+  color: #1effa5;
+  margin: 0;
+}
+
+.landing-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  gap: 3rem;
+}
+
+.landing-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  text-align: center;
+}
+
+.landing-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.landing-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.landing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  border-color: rgba(30, 144, 255, 0.3);
+}
+
+.landing-card:active {
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .landing-header {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .logo-placeholder {
+    width: 32px;
+    height: 32px;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  .landing-heading {
+    font-size: 2.25rem;
+  }
+
+  .landing-cards {
+    gap: 1.5rem;
+  }
+
+  .landing-card {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 3.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-header {
+    gap: 8px;
+  }
+
+  .app-title {
+    font-size: 1.25rem;
+  }
+
+  .landing-heading {
+    font-size: 1.75rem;
+  }
+
+  .landing-content {
+    gap: 2rem;
+    padding: 24px 12px;
+  }
+
+  .landing-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
